@@ -5,6 +5,8 @@ export const Container = styled.div`
   margin-top: 2rem;
 `;
 
+/* eslint-disable */
+
 export const Video = styled.div`
   video{
     position:fixed;
@@ -16,3 +18,5 @@ export const Video = styled.div`
     min-height: 100%;  
   }
 `;
+
+/* eslint-enable */
