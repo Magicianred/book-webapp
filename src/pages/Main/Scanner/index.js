@@ -5,6 +5,7 @@ import Quagga from 'quagga';
 import { valideIsbn } from '../../../services/books';
 import { Video, Container, ScanMarker } from './styles';
 import Logo from '../../../assets/images/logo.svg';
+import ScanMark from '../../../assets/images/scan-mark.svg';
 
 function Scanner({ onScan }) {
   const onDetected = (result) => {
@@ -60,24 +61,17 @@ function Scanner({ onScan }) {
       <Container>
         <ScanMarker>
           <img
-            src={Logo}
-            alt="Marca para leitura do código"
-            width="260"
-            height="260"
-          />
-          <img
-            src="../../assets/images/scan-mark.svg"
+            src={ScanMark}
             alt="Marca para leitura do código"
             width="260"
             height="260"
           />
           <p>Aponte para o código de barras do livro</p>
           <img
-            className="Logo"
-            src="../../../assets/images/logo.svg"
-            alt="Logo"
-            width="137"
-            height="69"
+            src={Logo}
+            alt="Marca para leitura do código"
+            width="50"
+            height="50"
           />
         </ScanMarker>
       </Container>
