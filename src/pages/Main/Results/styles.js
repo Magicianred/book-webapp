@@ -7,12 +7,12 @@ export const Container = styled.div`
   right: 20px;
   background-color: #fff;
   border-radius: 12px;
-  padding: 20px;
 
   a {
     display: block;
     text-decoration: none;
     color: #000;
+    padding: 20px;
   }
 
   @media (min-width: 320px) and (max-width: 480px) {
