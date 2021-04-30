@@ -19,9 +19,6 @@ export const valideIsbn = (isbn) => {
 };
 
 export const getBooks = async (isbn) => {
-  /* eslint-disable */
-  console.log('teste');
-  /* eslint-enable */
   const response = await api.get(`/books/${isbn}`);
   return response.data;
 };

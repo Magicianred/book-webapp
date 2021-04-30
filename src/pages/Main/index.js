@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-/// import Scanner from './Scanner';
+import Scanner from './Scanner';
 import Results from './Results';
 
 function Main() {
@@ -8,6 +8,7 @@ function Main() {
   /* eslint-enable */
   return (
     <>
+      <Scanner onScan={setIsbn} />
       <Results isbn={isbn} />
     </>
   );
